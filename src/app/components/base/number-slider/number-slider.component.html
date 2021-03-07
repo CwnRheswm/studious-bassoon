@@ -1,0 +1,9 @@
+<mat-form-field class="example-inline">
+  <mat-label>{{title}}</mat-label>
+  <input matInput
+  		autocomplete="new-password"
+  		name="numberInput"
+  		type="number"
+  		(blur)="sliderOpen.emit(false)"
+  		(focus)="sliderOpen.emit(true)">
+</mat-form-field>

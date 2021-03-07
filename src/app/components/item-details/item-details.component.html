@@ -1,0 +1,40 @@
+<form class="example-form">
+  <mat-form-field class="example-inline">
+    <mat-label>Title</mat-label>
+    <input matInput placeholder="Ex. Pizza" value="Sushi">
+  </mat-form-field>
+
+  <div class="example-inline"><packer-icon-picker></packer-icon-picker></div>
+  <div class="example-inline">
+    <packer-number-slider
+        title="Number"
+        (sliderOpen)="sliderChange($event)"
+    ></packer-number-slider>
+  </div>
+  <div class="example-inline">
+    <packer-number-slider
+        title="Size"
+        (sliderOpen)="sliderChange($event)"
+    ></packer-number-slider>
+  </div>
+  <div class="example-inline">
+    <packer-number-slider
+        title="Weight"
+        (sliderOpen)="sliderChange($event)"
+    ></packer-number-slider>
+  </div>
+
+  <mat-form-field class="example-inline">
+    <mat-label>Add notes</mat-label>
+    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+  </mat-form-field>
+
+  <mat-icon class="material-icons material-icons-two-tone"
+      maxRows="1">remove_circle</mat-icon>
+</form>
+<mat-slider *ngIf="isSliderOpen"
+    class="item-details__slider"
+    thumbLabel="true"
+    (blur)="isSliderOpen = false"
+    (focus)="isSliderOpen = true"
+></mat-slider>

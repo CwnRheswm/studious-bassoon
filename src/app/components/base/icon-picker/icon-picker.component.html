@@ -1,0 +1,15 @@
+<mat-form-field class="example-inline">
+  <mat-label><mat-icon class="material-icons material-icons-two-tone">{{chosenIcon}}</mat-icon></mat-label>
+  <input #iconAutocompleteInput
+         type="text"
+         placeholder="Pick one"
+         aria-label="Select an Icon"
+         matInput
+         [formControl]="iconControl"
+         [matAutocomplete]="iconAutocomplate">
+  <mat-autocomplete #iconAutocomplate="matAutocomplete">
+    <mat-option (onSelectionChange)="renderIcon($event)" *ngFor="let option of filteredOptions | async" [value]="option" (blur)="onBlur()">
+      <mat-icon class="material-icons material-icons-two-tone">{{option}}</mat-icon>
+    </mat-option>
+  </mat-autocomplete>
+</mat-form-field>
