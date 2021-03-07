@@ -1,0 +1,50 @@
+menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  padding: 0;
+  width: 100vw;
+
+  .travel-menu-button-container {
+    height: 32px;
+    min-width: 36px;
+  }
+}
+
+.page-switcher {
+  position: sticky;
+  top: 10px;
+  // left: calc(50% - 25vw);
+  z-index: 9;
+
+  &.mat-button-toggle-group-appearance-standard {
+    border: 0;
+  }
+
+  .page-title {
+    display: none;
+  }
+
+  button {
+    transition: width 1s ease-in-out;
+    width: 15vw;
+
+    &.active {
+      width: 35vw;
+
+      .page-title {
+        display: inline-block;
+      }
+    }
+
+    &.mat-stroked-button {
+      background-color: lightgrey;
+    }
+
+    .mat-button-wrapper {
+      align-items: center;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}

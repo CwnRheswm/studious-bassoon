@@ -1,0 +1,69 @@
+<form class="example-form">
+  <mat-form-field class="example-inline">
+    <mat-label>Title</mat-label>
+    <input matInput placeholder="Ex. Pizza" value="Sushi">
+  </mat-form-field>
+
+<<<<<<< HEAD
+  <div class="example-inline">
+    <packer-icon-picker
+        [(icon)]="model.icon"
+    ></packer-icon-picker>
+  </div>
+  <div class="example-inline">
+    <packer-number-slider
+        title="Number"
+        [number]="model.number"
+=======
+  <div class="example-inline"><packer-icon-picker></packer-icon-picker></div>
+  <div class="example-inline">
+    <packer-number-slider
+        title="Number"
+>>>>>>> 19354ce2b11a6152ad2ee4a50a7b1e0037fa4f60
+        (sliderOpen)="sliderChange($event)"
+    ></packer-number-slider>
+  </div>
+  <div class="example-inline">
+    <packer-number-slider
+        title="Size"
+<<<<<<< HEAD
+        [number]="model.size"
+=======
+>>>>>>> 19354ce2b11a6152ad2ee4a50a7b1e0037fa4f60
+        (sliderOpen)="sliderChange($event)"
+    ></packer-number-slider>
+  </div>
+  <div class="example-inline">
+    <packer-number-slider
+        title="Weight"
+<<<<<<< HEAD
+        [number]="model.weight"
+=======
+>>>>>>> 19354ce2b11a6152ad2ee4a50a7b1e0037fa4f60
+        (sliderOpen)="sliderChange($event)"
+    ></packer-number-slider>
+  </div>
+
+  <mat-form-field class="example-inline">
+    <mat-label>Add notes</mat-label>
+<<<<<<< HEAD
+    <textarea matInput placeholder="Ex. It makes me feel..." [(value)]="model.notes"></textarea>
+=======
+    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+>>>>>>> 19354ce2b11a6152ad2ee4a50a7b1e0037fa4f60
+  </mat-form-field>
+
+  <mat-icon class="material-icons material-icons-two-tone"
+      maxRows="1">remove_circle</mat-icon>
+</form>
+<mat-slider *ngIf="isSliderOpen"
+    class="item-details__slider"
+    thumbLabel="true"
+    (blur)="isSliderOpen = false"
+    (focus)="isSliderOpen = true"
+<<<<<<< HEAD
+    (ngModelChange)="updateModelSlider($event)"
+    [ngModel]="slidingValue"
+=======
+>>>>>>> 19354ce2b11a6152ad2ee4a50a7b1e0037fa4f60
+></mat-slider>

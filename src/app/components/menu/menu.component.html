@@ -1,0 +1,39 @@
+<menu>
+  <div class="travel-menu-button-container">
+    <packer-travel-destination-menu
+        *ngIf="isTravelShowing">
+    </packer-travel-destination-menu>
+  </div>
+
+  <mat-button-toggle-group class="page-switcher" name="pages" aria-label="Pages Toggle">
+    <button
+        color="primary"
+        mat-button
+        md-swipe-right="switchPageRight()"
+        value="travel"
+        [class.mat-raised-button]="activePage === 'travel'"
+        [class.mat-stroked-button]="activePage !== 'travel'"
+        [ngClass]="activePage === 'travel' ? 'active': ''"
+        (click)="setPage('travel')"
+    >
+      <mat-icon class="">flight</mat-icon> <span class="page-title">Travel</span>
+    </button>
+    <button
+        color="primary"
+        mat-button
+        md-swipe-left="switchPageLeft()"
+        value="sets"
+        [class.mat-raised-button]="activePage === 'sets'"
+        [class.mat-stroked-button]="activePage !== 'sets'"
+        [ngClass]="activePage === 'sets' ? 'active': ''"
+        (click)="setPage('sets')"
+    >
+      <span class="page-title">Sets</span> <mat-icon class="">collections_bookmark</mat-icon>
+    </button>
+  </mat-button-toggle-group>
+
+  <packer-profile-menu></packer-profile-menu>
+</menu>
+<section class="page-section">
+  <ng-container #page></ng-container>
+</section>

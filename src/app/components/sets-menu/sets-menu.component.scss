@@ -1,0 +1,9 @@
+.menu-bar {
+	font-size: 32px;
+}
+
+.material-icons {
+	&-two-tone {
+		filter: invert(40%) sepia(100%) saturate(332%) hue-rotate(73deg) brightness(94%) contrast(84%);
+	}
+}

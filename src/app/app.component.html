@@ -1,0 +1,378 @@
+<<<<<<< HEAD
+<!-- <div class="places"> -->
+=======
+<div class="places">
+>>>>>>> 19354ce2b11a6152ad2ee4a50a7b1e0037fa4f60
+  <span class="fa-stack fa-3x" style="color: blue;" *ngFor="let icon of []"><!-- 
+  <span class="fa-stack fa-3x" style="color: blue;" *ngFor="let icon of ['briefcase','suitcase',
+'suitcase-rolling','tshirt','train','tint','ticket-alt','taxi','tag','tags','store-alt','socks','shuttle-van','shopping-bag','ship','road','plane','mountain','mitten','map-signs','leaf','home','hiking','globe','campground','car','caravan','bicycle','bed','beer']"> -->
+    <i class="far fa-circle fa-stack-2x" style="color: red;"></i>
+    <i class="fas fa-{{icon}} fa-stack-1x"></i>
+  </span>
+  <!-- <mat-button-toggle-group #group="matButtonToggleGroup">
+    <mat-button-toggle value="trabel" aria-label="Go to Travel Page">
+      <mat-icon>format_align_left</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle value="sets" aria-label="Go to Sets Page">
+      <mat-icon>format_align_right</mat-icon>
+    </mat-button-toggle>
+  </mat-button-toggle-group> -->
+<<<<<<< HEAD
+  <mat-accordion style="display: none;">
+=======
+  <mat-accordion>
+>>>>>>> 19354ce2b11a6152ad2ee4a50a7b1e0037fa4f60
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Icons
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <input #iconFilterInput
+          matInput
+          placeholder="filter"
+          type="text"
+          [formControl]="iconFilterControl">
+      <ul class="icon-list">
+        <li *ngFor="let icon of filteredIcons | async">
+<<<<<<< HEAD
+          <mat-icon title="{{icon}}" class="material-icons material-icons-two-tone">{{icon}}</mat-icon>
+        </li>
+      </ul>
+=======
+          <mat-icon class="material-icons material-icons-two-tone">{{icon}}</mat-icon>
+        </li>
+      </ul>
+
+      <!-- <mat-icon class="material-icons material-icons-two-tone">lightbulb</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">face</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">fingerprint</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">schedule</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">shopping_bag</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">book</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">group_work</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">work</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">work_outline</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">account_balance_wallet</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">shopping_basket</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">card_giftcard</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">source</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">anchor</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">theaters</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">aspect_ratio</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">commute</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">pregnant_woman</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">outlet</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">hourglass_full</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">hourglass_top</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">hourglass_bottom</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">camera_enhance</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">fit_screen</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">settings_remote</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">next_plan</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">tour</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">settings_cell</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">all_inbox</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">dynamic_form</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">settings_input_hdmi</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">settings_power</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">settings_input_svideo</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">settings_input_component</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">comment_bank</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">hotel_class</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">person</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">people</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">groups</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">school</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">catching_pokemon</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sentiment_very_satisfied</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sentiment_satisfied</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">emoji_emotions</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sentiment_neutral</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sentiment_dissatisfied</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sentiment_very_dissatisfied</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">emoji_objects</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">science</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sports_esports</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">cake</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">self_improvement</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">travel_explore</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">location_city</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">domain</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">hiking</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sports_soccer</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">emoji_nature</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">whatshot</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sports_basketball</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">luggage</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">nights_stay</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">outdoor_grill</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sports_tennis</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">kayaking</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">emoji_food_beverage</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">deck</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">king_bed</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sports_baseball</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">skateboarding</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">fireplace</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sports_football</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sports_volleyball</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sports</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">surfing</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">single_bed</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">snowboarding</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sports_bar</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sports_handball</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">snowshoeing</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sledding</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sports_golf</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sports_cricket</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">kitesurfing</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">iceskating</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">recycling</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">compost</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">cancel</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">expand_more</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">expand_less</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">payments</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">maps_home_work</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">arrow_drop_down_circle</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">switch_left</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">switch_right</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">location_on</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">business</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">chat</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">vpn_key</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">contact_mail</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">contacts</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">contact_phone</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">import_contacts</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">stay_current_portrait</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">content_copy</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">create</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">bolt</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">save</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">inventory_2</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">inventory</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">flag</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">remove_circle</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sort</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">push_pin</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">add_box</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">add_circle</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">shield</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">content_paste</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">report</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">archive</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">content_cut</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">biotech</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">inbox</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">change_circle</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">waves</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">dynamic_feed</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">drafts</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">markunread</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">move_to_inbox</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">select_all</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">copy_all</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">next_week</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">photo_camera</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">auto_awesome</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">palette</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">receipt_long</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">image</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">auto_stories</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">music_note</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">wb_cloudy</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">wb_incandescent</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">wb_iridescent</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">wb_shade</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">wb_sunny</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">wb_twilight</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">brush</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">camera</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">landscape</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">filter_vintage</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">style</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">straighten</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">filter_drama</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">healing</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">timelapse</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">auto_awesome_motion</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">flare</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">collections_bookmark</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">colorize</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">animation</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">compare</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">broken_image</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">cases</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">movie_creation</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">bedtime</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">flip_camera_android</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">panoroma</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">mic_external_on</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">transform</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">hdr_strong</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">photo_album</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">photo_camera_front</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">movie_filter</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">camera_roll</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">vrpano</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">monochrome_photos</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">dirty_lens</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">brightness_1</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">brightness_2</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">brightness_4</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">brightness_5</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">brightness_6</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">brightness_7</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_shipping</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_cafe</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">menu_book</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">volunteer_activism</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_activity</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_atm</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_bar</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_cafe</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_dining</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_drink</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_fire_department</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_florist</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_gas_station</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_grocery_store</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_hospital</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_hotel</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_laundry_services</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_library</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_movies</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_pharmacy</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_phone</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_police</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_post_office</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_printshop</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_taxi</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">directions_bike</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">directions_car</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">badge</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">handyman</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">flight</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">local_mall</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">restaurant_menu</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">lunch_dining</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">design_services</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">park</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">medical_services</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">celebration</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">pin_drop</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">layers</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">delivery_dining</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">hotel</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">home_repair_service</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">pedal_bike</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">train</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">agriculture</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">fastfood</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">ramen_dining</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">directions_boat</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">directions_bus</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">traffic</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">two_wheeler</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">money</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">alt_route</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">liquor</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">sailing</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">wine_bar</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">theater_comedy</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">bakery_dining</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">electrical_services</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">dinner_dining</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">icecream</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">ev_station</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">nightlife</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">tram</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">festival</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">attractions</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">dry_cleaning</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">store_mall_directory</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">subway</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">moped</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">brunch_dining</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">emergency</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">videogame_asset</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">watch</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">smartphone</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">computer</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">tv</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">smart_toy</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">desktop_windows</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">laptop</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">speaker</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">toys</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">highlight</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">spa</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">storefront</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">house</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">apartment</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">fitness_center</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">business_center</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">family_restroom</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">ac_unit</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">cottage</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">grass</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">pool</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">casino</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">beach_access</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">kitchen</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">gite</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">free_breakfast</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">holiday_village</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">roofing</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">child_friendly</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">backpack</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">bathtub</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">tapas</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">cabin</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">umbrella</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">chalet</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">crib</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">stroller</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">power</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">battery_charging_full</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">chair</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">yard</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">bedroom_baby</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">bathroom</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">bedroom_parent</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">living</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">chair_alt</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">bedroom_child</mat-icon>
+      <mat-icon class="material-icons material-icons-two-tone">bedroom_child</mat-icon> -->
+>>>>>>> 19354ce2b11a6152ad2ee4a50a7b1e0037fa4f60
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <!-- <button mat-button-flat (click)="openTestModal()">Modal</button> -->
+<<<<<<< HEAD
+  <packer-menu (page)="switchPage($event)"></packer-menu>
+=======
+  <mat-button-toggle-group name="pages" aria-label="Pages Toggle">
+    <button mat-raised-button md-swipe-right="switchPageRight()" color="primary" value="travel" (click)="getTravelPage()">Travel</button>
+    <button mat-raised-button md-swipe-left="switchPageLeft()" color="primary" value="sets" (click)="getSetsPage()">Sets</button>
+  </mat-button-toggle-group>
+>>>>>>> 19354ce2b11a6152ad2ee4a50a7b1e0037fa4f60
+
+  <!-- <app-places-form></app-places-form>
+  <div class="columns" *ngIf="places$ | async as places">
+    <div class="places-list">
+      <app-places-list [places]="places"></app-places-list>
+    </div>
+    <div class="map">
+      <app-places-map [places]="places"></app-places-map>
+    </div>
+  </div> -->
+<<<<<<< HEAD
+
+<!-- </div> -->
+=======
+</div>
+>>>>>>> 19354ce2b11a6152ad2ee4a50a7b1e0037fa4f60

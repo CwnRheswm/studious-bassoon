@@ -1,0 +1,83 @@
+.places {
+  margin: 18px 18px;
+
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "places-list map";
+  }
+
+  .places-list {
+    grid-area: places-list;
+  }
+
+  .map {
+    grid-area: map;
+  }
+}
+
+.test {
+  background: repeating-linear-gradient(45deg, blue, transparent 5px, transparent 9px), repeating-linear-gradient(135deg, red, transparent 5px, transparent 9px), grey
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.demo-content {
+  height: 450px;
+}
+
+.demo-swipe {
+  height: 100%;
+  width: 100%;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+
+  &-two-tone {
+    font-family: 'Material Icons Two Tone'
+  }
+}
+
+.icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  li {
+    list-style: none;
+  }
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 19354ce2b11a6152ad2ee4a50a7b1e0037fa4f60

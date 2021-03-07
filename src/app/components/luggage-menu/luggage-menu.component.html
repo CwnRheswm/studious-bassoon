@@ -1,0 +1,33 @@
+<h3>{{title}}</h3>
+<menu>
+	<mat-icon
+			*ngIf="allOpen"
+			class="material-icons material-icons-two-tone">
+		close_fullscreen</mat-icon>
+	<mat-icon
+			*ngIf="!allOpen"
+			class="material-icons material-icons-two-tone">
+		open_in_full</mat-icon>
+
+	<mat-button-toggle-group
+			aria-label="Luggage Sort Toggle"
+			name="luggages"
+	>
+		<button
+			mat-button
+			color="accent"
+			[class.mat-raised-button]="activeSort === 'alpha'"
+			[class.mat-stroked-button]="activeSort !== 'alpha'"
+			[innerHTML]="alphaDown ? 'A-Z' : 'Z-A'"
+		></button>
+		<button
+				mat-button
+				color="accent"
+				[class.mat-raised-button]="activeSort === 'date'"
+				[class.mat-stroked-button]="activeSort !== 'date'"
+				[innerHTML]="dateDown ? 'Jan - Dec' : 'Dec - Jan'"
+		></button>
+	</mat-button-toggle-group>
+
+	<mat-icon class="material-icons material-icons-two-tone">add_circle</mat-icon>
+</menu>

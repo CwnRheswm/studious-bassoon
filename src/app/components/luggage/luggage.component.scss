@@ -1,0 +1,25 @@
+.luggage-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 24px;
+	grid-row-gap: 24px;
+	margin: 30px 5vw 0;
+
+	button {
+		align-items: center;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		margin: auto;
+		min-height: 64px;
+		min-width: 64px;
+		height: 20vw;
+		width: 20vw;
+
+		.material-icons.material-icons-two-tone {
+			height: 100%;
+			font-size: 5em;
+			width: 100%;
+		}
+	}
+}

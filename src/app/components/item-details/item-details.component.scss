@@ -1,0 +1,44 @@
+.example{
+	&-form {
+		align-content: space-evenly;
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+	&-inline {
+		margin-right: 10px;
+		max-width: 50px;
+		padding-bottom: 0;
+
+		mat-form-field {
+			width: 100%;
+		}
+	}
+}
+
+::ng-deep.mat-form-field-wrapper {
+	padding-bottom: 0;
+}
+
+.mat-form-field-label-wrapper .mat-icon {
+	background-color: red;
+	font-size: 32px;
+	height: 32px;
+	width: 32px;
+}
+
+.mat-focus {
+	.mat-icon {
+		font-size: 24px;
+		height: 32px;
+		width: 32px;
+	}
+}
+
+.item-details__slider {
+	margin: 0 10vw;
+	width: 80vw;
+}
